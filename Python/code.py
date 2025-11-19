@@ -157,12 +157,68 @@ print("AVERAGE : ",avrg)
 #         count+=1
 #     num=int(num/10)
 # print(count)        
-def numCount(num):
-    count=0
-    while(num>0):
-        if(num%10!=0):
-            count+=1
-        num=int(num/10)
+# 4.
+# def numCount(num):
+#     count=0
+#     while(num>0):
+#         if(num%10!=0):
+#             count+=1
+#         num=int(num/10)
 
-    print(count)        
-numCount(000)
+#     print(count)        
+# numCount(000)
+# 5.
+# num=654
+# def sum(num):
+#     ans=0
+#     while(num>0):
+#         lastdigit=int(num%10)
+#         ans+=lastdigit
+#         num=int(num/10)
+#     print(ans)
+# sum(num)
+# 6.
+# for i in range(1,101):
+#     if(i%3==0 and i%5==0):
+#         print(i)
+# 7.
+# while(True):
+#     intp=input("enter number ")
+#     if(intp=="quit"):
+#         break
+#     num=int(intp)
+#     if(num<0):
+#         print("neagtive")
+#     else:
+#         print("positive")    
+# 8.
+# def calculator(a,b,operation):
+#     if(operation=="+"):
+#         print(a+b)
+#     elif (operation=="-"):
+#         print(a-b)
+#     elif (operation=="*"):
+#         print(a*b)
+#     elif (operation=="/"):
+#         print(a/b) 
+#     else:
+#         print("wrong operation ")               
+# calculator(4,5,"+")        
+# 9.
+# def is_prime(num):
+#     if(num<2):
+#         return
+#     for i in range(2,num-1):
+#         if(num%i==0):
+#             return False
+#     return True
+# print(is_prime(7))
+# 10.
+num=45
+guess=int(input("Enter the number "))
+if(guess>num):
+    print("Too High")
+elif(guess<num):
+    print("Too Low")    
+else:
+    print("Correct!")    
